@@ -13,7 +13,7 @@ class Solution0301(Solution):
 
     def run(self) -> int:
         current_total = 0
-        with open(util.get_resource('day_03_01_input.txt')) as f:
+        with self.get_input_file() as f:
             while True:
                 line = f.readline().strip()
                 if not line:
@@ -39,7 +39,7 @@ class Solution0302(Solution):
         current_highest_totals = []
         total = 0
         current_sets = []
-        with open(util.get_resource('day_03_01_input.txt')) as f:
+        with self.get_input_file() as f:
             while True:
                 line = f.readline().strip()
                 if not line:

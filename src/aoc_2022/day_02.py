@@ -64,7 +64,7 @@ class Solution0201(Solution):
 
     def run(self) -> int:
         total_score = 0
-        with open(util.get_resource('day_02_01_input.txt')) as f:
+        with self.get_input_file() as f:
             while True:
                 line = f.readline()
 
@@ -103,7 +103,7 @@ class Solution0202(Solution):
 
     def run(self) -> int:
         total_score = 0
-        with open(util.get_resource('day_02_01_input.txt')) as f:
+        with self.get_input_file() as f:
             while True:
                 line = f.readline()
 

@@ -10,7 +10,7 @@ def get_resource_directory() -> str:
     return os.path.join(current_dir_path, '../../resources')
 
 
-def get_resource(resource_name: str) -> str:
+def get_resource_path(resource_name: str) -> str:
     """
     Given some file name, this function will return the full path of that resource
     :param resource_name:

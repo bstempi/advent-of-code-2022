@@ -7,7 +7,7 @@ class Solution0401(Solution):
 
     def run(self) -> int:
         current_total = 0
-        with open(util.get_resource('day_04_01_input.txt')) as f:
+        with self.get_input_file() as f:
             while True:
                 line = f.readline().strip()
                 if not line or line == '':
@@ -16,7 +16,7 @@ class Solution0401(Solution):
                 first_range = ranges[0].split('-')
                 second_range = ranges[1].split('-')
                 overlaps = self.do_ranges_completely_overlap(int(first_range[0]), int(first_range[1]),
-                                                               int(second_range[0]), int(second_range[1]))
+                                                             int(second_range[0]), int(second_range[1]))
                 if overlaps:
                     current_total += 1
 
@@ -38,7 +38,7 @@ class Solution0402(Solution):
 
     def run(self) -> int:
         current_total = 0
-        with open(util.get_resource('day_04_01_input.txt')) as f:
+        with self.get_input_file() as f:
             while True:
                 line = f.readline().strip()
                 if not line or line == '':

@@ -2,13 +2,14 @@ from aoc_2022 import Solution, util
 
 
 class Solution0101(Solution):
+
     day = 1
     part = 1
 
     def run(self) -> int:
         current_highest_total = 0
         current_elf_total = 0
-        with open(util.get_resource('day_01_01_input.txt')) as f:
+        with self.get_input_file() as f:
             while True:
                 line = f.readline()
                 if not line:
@@ -33,7 +34,7 @@ class Solution0102(Solution):
     def run(self) -> int:
         current_highest_totals = []
         current_elf_total = 0
-        with open(util.get_resource('day_01_01_input.txt')) as f:
+        with self.get_input_file() as f:
             while True:
                 line = f.readline()
                 if not line:
@@ -48,7 +49,6 @@ class Solution0102(Solution):
                         # Get rid of the min value
                         min_val = min(current_highest_totals)
                         current_highest_totals.remove(min_val)
-
 
                     # No matter what, reset the current counter
                     current_elf_total = 0
