@@ -111,10 +111,6 @@ class Solution1401(Solution):
     day = 14
     part = 1
 
-    @property
-    def input_file_name(self) -> str:
-        return 'day_14_01_input.txt'
-
     def run(self):
         with self.get_input_file() as input_file:
             input = input_file.readlines()
