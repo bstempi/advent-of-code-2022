@@ -2,6 +2,8 @@
 This repo contains my answers to the [2022 Advent of Code Challenge](https://adventofcode.com/2022/). I got about a dozen problems in before Christmas, so I definitely didn't solve it in time, but I definitely had fun with the ones that I did solve and intend on solving more.
 
 ## Running
+Python 3.11+ required.
+
 If you hop into your favorite venv, you can run `pip install -r requirements.txt` to install the requirements to run the solutions. Once that's done, add the source to your Python path and you can run the `aoc_2022` module to run answers. If you're cool enough to be using PyCharm and you have a venv set up, the example commands below should have the play symbol next to them and should be executable by simply clicking them.
 
 ### Running a Solution
